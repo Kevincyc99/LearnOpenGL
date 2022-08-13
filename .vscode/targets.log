@@ -1,0 +1,393 @@
+make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 3.82.90
+# Built for i686-pc-mingw32
+# Copyright (C) 1988-2012 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+ 
+
+# Make data base, printed on Sat Aug 13 17:05:24 2022
+
+# Variables
+
+# automatic
+<D = $(patsubst %/,%,$(patsubst %\,%,$(dir $<)))
+# automatic
+?F = $(notdir $?)
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 21)
+SRC := src/
+# makefile
+MAKEFLAGS = Rrqp
+# automatic
+?D = $(patsubst %/,%,$(patsubst %\,%,$(dir $?)))
+# makefile (from 'Makefile', line 50)
+INCLUDES := -Iinclude
+# automatic
+@D = $(patsubst %/,%,$(patsubst %\,%,$(dir $@)))
+# environment
+HOMEDRIVE = C:
+# automatic
+@F = $(notdir $@)
+# aut 
+omatic
+^D = $(patsubst %/,%,$(patsubst %\,%,$(dir $^)))
+# makefile
+CURDIR := g:/C++/Code/MyCode/OpenGL/LearnOpenGL
+# default
+SHELL := sh.exe
+# makefile (from 'Makefile', line 37)
+RM := del /q /f
+# environment
+WINDIR = C:\Windows
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{},"_languagePackSupport":true}
+# environment
+VBOX_MSI_INSTALL_PATH = E:\VirtualBox\
+# environment
+ONEDRIVE = C:\Users\raini\OneDrive
+# environment
+PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# environment
+FPS_BROWSER_USER_PROFILE_STRING = Default
+# environment
+TMP = C:\Users\raini\AppData\Local\Temp
+# makefile (from 'Makefile', line 56)
+SOURCES := 
+# makefile (from 'Makefile', line 10)
+CXXFLAGS := -std=c++17 -Wall -Wextra -g
+# environment
+PROGRAMW6432 = C:\Program Files
+# environment
+PROGRAMDATA = C:\ProgramData
+# environment
+VSCODE_CWD = G:\Code\VSCODE\Microsoft VS Code
+# environment
+PATH = G:\Code\Vulkan\VulkanSDK\Bin;C:\Program Files\PlasticSCM5\server;C:\Program Files\PlasticSCM5\client;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;F:\APP\Bandizip\;C:\Program Files\dotnet\;G:\Code\VSCODE\Microsoft VS Code\bin;F:\APP\Calibre\;G:\Code\Git\Git\cmd;G:\Code\CMake\bin;G:\Code\MinGW\bin;C:\Users\raini\AppData\Local\Microsoft\WindowsApps;C:\Users\raini\.dotnet\tools;C:\Users\raini\AppData\Local\GitHubDesktop\bin;G:\JetBrains\Rider\JetBrains Rider 2022.2\bin;
+# environment
+COMMONPROGRAMW6432 = C:\Program Files\Common Files
+# makefile (from 'Makefile', line 38)
+MD := mkdir
+# makefile (from 'Makefile', line 22)
+CLEAN_SRC := src//*.o 	
+# environment
+PROCESSOR_ARCHITECTURE = x86
+# environment
+USERPROFILE = C:\Users\raini
+# environment
+ALLUSERSPROFILE = C:\ProgramData
+# makefile (from 'Makefile', line 35)
+LIBDIRS := lib
+# environment
+NUMBER_OF_PROCESSORS = 12
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# makefile (from 'Makefile', line 28)
+LIB := lib
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver
+# environment
+VK_SDK_PATH = G:\Code\Vulkan\VulkanSDK
+# automatic
+%F = $(notdir $%)
+# environment
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6812_YGDJYNNHFFTBFNOK
+# environment
+COMPUTERNAME = DESKTOP-0F2PMD1
+# environment
+PROGRAMFILES = C:\Program Files (x86)
+# makefile (from 'Makefile', line 67)
+OUTPUTMAIN := output\main.exe
+# environment
+DRIVERDATA = C:\Windows\System32\Drivers\DriverData
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+# environment
+USERNAME = raini
+# environment
+PUBLIC = C:\Users\Public
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+JETBRAINS RIDER = G:\JetBrains\Rider\JetBrains Rider 2022.2\bin;
+# environment
+VSCODE_CODE_CACHE_PATH = C:\Users\raini\AppData\Roaming\Code\CachedData\da76f93349a72022ca4670c1b84860304616aaa2
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+COMMONPROGRAMFILES = C:\Program Fi 
+les (x86)\Common Files
+# environment
+LOGONSERVER = \\DESKTOP-0F2PMD1
+# makefile (from 'Makefile', line 34)
+INCLUDEDIRS := include
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+USERDOMAIN = DESKTOP-0F2PMD1
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# makefile (from 'Makefile', line 29)
+Libraries := -lglad -lglfw3dll
+# makefile (from 'Makefile', line 36)
+FIXPATH = $(subst /,\,$1)
+# default
+MAKE_VERSION := 3.82.90
+# makefile
+.DEFAULT_GOAL := all
+# makefile (from 'Makefile', line 25)
+INCLUDE := include
+# makefile (from 'Makefile', line 33)
+SOURCEDIRS := src/
+# environment
+PROGRAMFILES(X86) = C:\Program Files (x86)
+# automatic
+%D = $(patsubst %/,%,$(patsubst %\,%,$(dir $%)))
+# makefile (from 'Makefile', line 15)
+LFLAGS = 
+# environment
+LOCALAPPDATA = C:\Users\raini\AppData\Local
+# environment
+PSMODULEPATH = C:\Program Files\WindowsPowerShell\Modules;C:\Windows\system32\WindowsPowerShell\v1.0\Modules
+# default
+MAKE_COMMAND := make.exe
+# environment
+PROCESSOR_ARCHITEW6432 = AMD64
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
+# environment
+OS = Windows_NT
+# environment
+VSCODE_IPC_HOOK = \\.\pipe\e48ad3739aae92155c1fcbb22f83b8eb-1.70.0-main-sock
+# environment
+HOMEPATH = \Users\raini
+# environment
+COMMONPROGRAMFILES(X86) = C:\Program Files (x86)\Common Files
+# environment
+PROMPT = $P$G
+# environment
+MFLAGS = -Rrqp
+# automatic
+*D = $(patsubst %/,%,$(patsubst %\,%,$(dir $*)))
+# makefile (from 'Makefile', line 32)
+MAIN := main.exe
+# environment
+SYSTEMROOT = C:\Windows
+# automatic
++D = $(patsubst %/,%,$(patsubst %\,%,$(dir $+)))
+# automatic
++F = $(notdir $+)
+# environment
+APPDATA = C:\Users\raini\AppData\Roaming
+# environment
+TEMP = C:\Users\raini\AppData\Local\Temp
+# environment
+COMSPEC = C:\Windows\system32\cmd.exe
+# makefile (from 'Makefile', line 18)
+OUTPUT := output
+# default
+MAKEFILES := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 7)
+CXX = 
+ g++
+# environment
+LC_ALL = C
+# makefile (from 'Makefile', line 53)
+LIBS := -Llib
+# automatic
+^F = $(notdir $^)
+# default
+SUFFIXES := 
+# environment
+SYSTEMDRIVE = C:
+# environment
+SESSIONNAME = Console
+# environment
+PROCESSOR_REVISION = 0802
+# default
+.RECIPEPREFIX := 
+# makefile (from 'Makefile', line 59)
+OBJECTS := 
+# environment
+VULKAN_SDK = G:\Code\Vulkan\VulkanSDK
+# environment
+LANG = C
+# environment
+PROCESSOR_LEVEL = 23
+# environment
+FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
+# environment
+VSCODE_PID = 6812
+# environment
+USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
+# variable set hash-table stats:
+# Load=110/1024=11%, Rehash=0, Collisions=14/158=9%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# G:\Code\CMake\bin (key G:/Code/CMake/bin, mtime 1659001481): 7 files, no impossibilities.
+# C:\Program Files\PlasticSCM5\client (key C:/Program Files/PlasticSCM5/client, mtime 1649319606): 248 files, no impossibilities.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633527262): 31 files, no impossibilities.
+# . (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL, mtime 1660324667): 11 files, no impossibilities.
+# C:\Users\raini\AppData\Local\Microsoft\WindowsApps (key C:/Users/raini/AppData/Local/Microsoft/WindowsApps, mtime 1660058633): 11 files, no impossibilities.
+# G:\Code\VSCODE\Microsoft VS Code\bin (key G:/Code/VSCODE/Microsoft VS Code/bin, mtime 1660049913): 4 files, no impossibilities.
+# C:\Users\raini\AppD 
+ata\Local\GitHubDesktop\bin (key C:/Users/raini/AppData/Local/GitHubDesktop/bin, mtime 1653965068): 4 files, no impossibilities.
+# C:\Windows\System32\OpenSSH\: could not be stat'd.
+# G:\JetBrains\Rider\JetBrains Rider 2022.2\bin (key G:/JetBrains/Rider/JetBrains Rider 2022.2/bin, mtime 1659846500): 35 files, no impossibilities.
+# C:\Users\raini\.dotnet\tools: could not be stat'd.
+# F:\APP\Calibre\ (key F:/APP/Calibre/, mtime 1654658085): 24 files, no impossibilities.
+# G:\Code\Git\Git\cmd (key G:/Code/Git/Git/cmd, mtime 1659001160): 8 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1660324745): 106 files, no impossibilities.
+# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1660320610): 3 files, no impossibilities.
+# C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1658254026): 154 files, no impossibilities.
+# G:\Code\MinGW\bin (key G:/Code/MinGW/bin, mtime 1660305897): 57 files, no impossibilities.
+# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 165128 
+6009): 13 files, no impossibilities.
+# C:\Program Files\PlasticSCM5\server (key C:/Program Files/PlasticSCM5/server, mtime 1649319606): 494 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1660355496): 3045 files, no impossibilities.
+# F:\APP\Bandizip\ (key F:/APP/Bandizip/, mtime 1658056348): 21 files, no impossibilities.
+# G:\Code\Vulkan\VulkanSDK\Bin (key G:/Code/Vulkan/VulkanSDK/Bin, mtime 1659001949): 48 files, no impossibilities.
+
+# 4324 files, no impossibilities in 21 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+all: output main.exe
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/11=0%
+#  recipe to execute (from 'Makefile', line 70):
+	@echo Executing 'all' complete!
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+main.exe:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := main.exe
+# automatic
+# % := 
+# automatic
+# * := 
+# automatic
+# + := 
+# automatic
+# | := 
+# automatic
+# < := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=2/19=11%
+#  recipe to execute (from 'Makefile', line 76):
+	$(CXX) $(CXXFLAGS) $(INCLUDES 
+) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS) $(Libraries)
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-13 17:05:11
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+run: all
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 92):
+	./$(OUTPUTMAIN)
+	@echo Executing 'run: all' complete!
+
+.cpp.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 83):
+	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $<  -o $@
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 87):
+	$(RM) $(OUTPUTMAIN)
+	$(RM) $(call FIXPATH,$(CLEAN_SRC))
+	@echo Cleanup complete!
+
+output:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-13 01:05:59
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 73):
+	$(MD) $(OUTPUT)
+
+# files hash-table stats:
+# Load=10/1024=1%, Rehash=0, Collisions=0/29=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No 
+ general ('VPATH' variable) search path.
+
+# strcache buffers: 9 (8) / strings = 4201 / storage = 72424 B / avg = 17 B
+# current buf: size = 8174 B / used = 7142 B / count = 505 / avg = 14 B
+# other used: total = 64250 B / count = 3696 / avg = 17 B
+# other free: total = 110 B / max = 19 B / min = 9 B / avg = 13 B
+
+# strcache performance: lookups = 4369 / hit rate = 3%
+# hash-table stats:
+# Load=4201/8192=51%, Rehash=0, Collisions=1865/4369=43%
+# Finished Make data base on Sat Aug 13 17:05:24 2022
+
+ 

@@ -19,6 +19,7 @@ OUTPUT	:= output
 
 # define source directory
 SRC		:= src/$(dir)
+CLEAN_SRC	:= src/$(dir)/*.o 	#删除.o文件
 
 # define include directory
 INCLUDE	:= include
@@ -84,7 +85,7 @@ $(MAIN): $(OBJECTS)
 .PHONY: clean
 clean:
 	$(RM) $(OUTPUTMAIN)
-	$(RM) $(call FIXPATH,$(OBJECTS))
+	$(RM) $(call FIXPATH,$(CLEAN_SRC))
 	@echo Cleanup complete!
 
 run: all

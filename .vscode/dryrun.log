@@ -1,0 +1,6 @@
+make.exe --dry-run --keep-going --print-directory
+make.exe: Entering directory 'g:/C++/Code/MyCode/OpenGL/LearnOpenGL'
+g++ -std=c++17 -Wall -Wextra -g -Iinclude -o output\main.exe   -Llib -lglad -lglfw3dll
+echo Executing 'all' complete!
+make.exe: Leaving directory 'g:/C++/Code/MyCode/OpenGL/LearnOpenGL'
+ 
