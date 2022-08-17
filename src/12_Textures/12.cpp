@@ -87,11 +87,13 @@ int main()
     glBindBuffer(GL_ARRAY_BUFFER, 0); 
     glBindVertexArray(0);
 
+    stbi_set_flip_vertically_on_load(true);
+
     //生成纹理
-    unsigned int texture;
-    glGenTextures(1, &texture);
+    unsigned int texture1, texture2;
+    glGenTextures(1, &texture1);
     //绑定纹理
-    glBindTexture(GL_TEXTURE_2D, texture);
+    glBindTexture(GL_TEXTURE_2D, texture1);
     //设置纹理环绕方式和过滤方式
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
@@ -100,7 +102,6 @@ int main()
     //加载图片
     int width, height, nrChannels;
     unsigned char *data = stbi_load("./static/texture/container.jpg", &width, &height, &nrChannels, 0);
-
     if (data)
     {
         //加载图片到纹理
@@ -110,12 +111,38 @@ int main()
     }
     else
     {
-        std::cout << "Failed to load texture" << std::endl;
+        std::cout << "Failed to load texture1" << std::endl;
     }
     //释放图片内存
     stbi_image_free(data);
-    
-
+    glGenTextures(1, &texture2);
+    //绑定纹理
+    glBindTexture(GL_TEXTURE_2D, texture2);
+    //设置纹理环绕方式和过滤方式
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    //加载图片
+    data = stbi_load("./static/texture/awesomeface.png", &width, &height, &nrChannels, 0);
+    if (data)
+    {
+        //加载图片到纹理
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, width, height, 0, GL_RGBA, GL_UNSIGNED_BYTE, data);
+        //生成Mipmap
+        glGenerateMipmap(GL_TEXTURE_2D);
+    }
+    else
+    {
+        std::cout << "Failed to load texture2" << std::endl;
+    }
+    //释放图片内存
+    stbi_image_free(data);
+    //通过glUnoform1i设置纹理单元
+    ourShader.use();
+    //glUniform1i(glGetUniformLocation(ourShader.ID, "texture1"), 0);
+    ourShader.setInt("ourTexture2", 0);
+    ourShader.setInt("ourTexture2", 1);
     //渲染循环
 	while(!glfwWindowShouldClose(window))
 	{
@@ -127,8 +154,11 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT);
 
         ourShader.use();
+        glActiveTexture(GL_TEXTURE0);
+        glBindTexture(GL_TEXTURE_2D, texture1);
+        glActiveTexture(GL_TEXTURE1);
+        glBindTexture(GL_TEXTURE_2D, texture2);
 
-        glBindTexture(GL_TEXTURE_2D, texture);
         glBindVertexArray(VAO);
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
         //glDrawArrays(GL_TRIANGLES, 0, 6);
