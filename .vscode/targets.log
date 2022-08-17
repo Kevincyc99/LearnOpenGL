@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Wed Aug 17 00:40:26 2022
+# Make data base, printed on Wed Aug 17 18:34:42 2022
 
 # Variables
 
@@ -95,7 +95,7 @@ VK_SDK_PATH = G:\Code\Vulkan\VulkanSDK
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_12592_AIGEBMMKZIARPPGS
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_11132_ADUKYZHSDRCEHQVD
 # environment
 COMPUTERNAME = DESKTOP-0F2PMD1
 # environment
@@ -229,7 +229,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 12592
+VSCODE_PID = 11132
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # variable set hash-table stats:
@@ -243,8 +243,9 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 
 # G:\Code\CMake\bin (key G:/Code/CMake/bin, mtime 1659001481): 7 files, no impossibilities.
 # C:\Program Files\PlasticSCM5\client (key C:/Program Files/PlasticSCM5/client, mtime 1649319606): 248 files, no impossibilities.
-# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633527262): 31 files, no impossibilities.
-# . (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL, mtime 1660666195): 12 files, no impossibilities.
+# C:\Windows\System32\WindowsPowerShel 
+l\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633527262): 31 files, no impossibilities.
+# . (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL, mtime 1660727254): 13 files, no impossibilities.
 # C:\Users\raini\AppData\Local\Microsoft\WindowsApps (key C:/Users/raini/AppData/Local/Microsoft/WindowsApps, mtime 1660058633): 11 files, no impossibilities.
 # G:\Code\VSCODE\Microsoft VS Code\bin (key G:/Code/VSCODE/Microsoft VS Code/bin, mtime 1660049913): 4 files, no impossibilities.
 # C:\Users\raini\AppData\Local\GitHubDesktop\bin (key C:/Users/raini/AppData/Local/GitHubDesktop/bin, mtime 1653965068): 4 files, no impossibilities.
@@ -254,7 +255,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # F:\APP\Calibre\ (key F:/APP/Calibre/, mtime 1654658085): 24 files, no impossibilities.
 # G:\Code\Git\Git\cmd (key G:/Code/Git/Git/cmd, mtime 1659001160): 8 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1660324745): 106 files, no impossibilities.
-# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1660663200): 10 files, no impossibilities.
+# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1660710096): 14 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1658254026): 154 files, no impossibilities.
 # G:\Code\MinGW\bin (key G:/Code/MinGW/bin, mtime 1660305897): 57 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1651286009): 13 files, no impossibilities.
@@ -263,7 +264,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # F:\APP\Bandizip\ (key F:/APP/Bandizip/, mtime 1658056348): 21 files, no impossibilities.
 # G:\Code\Vulkan\VulkanSDK\Bin (key G:/Code/Vulkan/VulkanSDK/Bin, mtime 1659001949): 48 files, no impossibilities.
 
-# 4335 files, no impossibilities in 21 directories.
+# 4340 files, no impossibilities in 21 directories.
 
 # Implicit Rules
 
@@ -360,7 +361,7 @@ clean:
 
 output:
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-17 00:07:58
+#  Last modified 2022-08-17 18:00:46
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 73):
@@ -374,14 +375,14 @@ output:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (8) / strings = 4212 / storage = 72583 B / avg = 17 B
-# current buf: size = 8174 B / used = 7272 B / count = 513 / avg = 14 B
-# other used: total = 64409 B / count = 3699 / avg = 17 B
-# other free: total = 81 B / max = 17 B / min = 1 B / avg = 10 B
+# strcache buffers: 9 (8) / strings = 4217 / storage = 72641 B / avg = 17 B
+# current buf: size = 8174 B / used = 7323 B / count = 517 / avg = 14 B
+# other used: total = 64467 B / count = 3700 / avg = 17 B
+# other free: total = 74 B / max = 17 B / min = 1 B / avg = 9 B
 
-# strcache performance: lookups = 4380 / hit rate = 3%
+# strcache performance: lookups = 4385 / hit rate = 3%
 # hash-table stats:
-# Load=4212/8192=51%, Rehash=0, Collisions=1876/4380=43%
-# Finished Make data base on Wed Aug 17 00:40:26 2022
+# Load=4217/8192=51%, Rehash=0, Collisions=1885/4385=43%
+# Finished Make data base on Wed Aug 17 18:34:42 2022
 
  
