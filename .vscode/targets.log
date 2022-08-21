@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Wed Aug 17 23:33:44 2022
+# Make data base, printed on Sun Aug 21 16:39:10 2022
 
 # Variables
 
@@ -95,7 +95,7 @@ VK_SDK_PATH = G:\Code\Vulkan\VulkanSDK
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14256_OUYFUCIOMPRVYRGN
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_13608_INJYRSEAKHQECFSJ
 # environment
 COMPUTERNAME = DESKTOP-0F2PMD1
 # environment
@@ -229,7 +229,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 14256
+VSCODE_PID = 13608
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # variable set hash-table stats:
@@ -254,17 +254,16 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # F:\APP\Calibre\ (key F:/APP/Calibre/, mtime 1654658085): 24 files, no impossibilities.
 # G:\Code\Git\Git\cmd (key G:/Code/Git/Git/cmd, mtime 1659001160): 8 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1660324745): 106 files, no impossibilities.
-# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1660748453): 18 files, no impossibilities.
+# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1660817819): 19 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1658254026): 154 files, no impossibilities.
 # G:\Code\MinGW\bin (key G:/Code/MinGW/bin, mtime 1660305897): 57 files, no impossibilities.
-# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime  
-1651286009): 13 files, no impossibilities.
+# C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1651286009): 13 files, no impossibilities.
 # C:\Program Files\PlasticSCM5\server (key C:/Program Files/PlasticSCM5/server, mtime 1649319606): 494 files, no impossibilities.
-# C:\Windows\system32 (key C:/Windows/system32, mtime 1660661779): 3048 files, no impossibilities.
+# C:\Windows\system32 (key C:/Windows/system32, mtime 1660795677): 3048 files, no impossibilities.
 # F:\APP\Bandizip\ (key F:/APP/Bandizip/, mtime 1658056348): 21 files, no impossibilities.
 # G:\Code\Vulkan\VulkanSDK\Bin (key G:/Code/Vulkan/VulkanSDK/Bin, mtime 1659001949): 48 files, no impossibilities.
 
-# 4344 files, no impossibilities in 21 directories.
+# 4345 files, no impossibilities in 21 directories.
 
 # Implicit Rules
 
@@ -286,7 +285,8 @@ all: output main.exe
 .PHONY: clean
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been updated.
+#  File has not 
+ been updated.
 
 main.exe:
 #  Implicit rule search has not been done.
@@ -361,7 +361,7 @@ clean:
 
 output:
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-17 23:23:19
+#  Last modified 2022-08-20 22:50:55
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 73):
@@ -375,14 +375,14 @@ output:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (8) / strings = 4221 / storage = 72694 B / avg = 17 B
-# current buf: size = 8174 B / used = 7376 B / count = 521 / avg = 14 B
-# other used: total = 64520 B / count = 3700 / avg = 17 B
+# strcache buffers: 9 (8) / strings = 4222 / storage = 72713 B / avg = 17 B
+# current buf: size = 8174 B / used = 7395 B / count = 522 / avg = 14 B
+# other used: total = 64539 B / count = 3700 / avg = 17 B
 # other free: total = 74 B / max = 17 B / min = 1 B / avg = 9 B
 
-# strcache performance: lookups = 4389 / hit rate = 3%
+# strcache performance: lookups = 4390 / hit rate = 3%
 # hash-table stats:
-# Load=4221/8192=52%, Rehash=0, Collisions=1892/4389=43%
-# Finished Make data base on Wed Aug 17 23:33:44 2022
+# Load=4222/8192=52%, Rehash=0, Collisions=1895/4390=43%
+# Finished Make data base on Sun Aug 21 16:39:10 2022
 
  
