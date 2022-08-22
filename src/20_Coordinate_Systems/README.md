@@ -4,4 +4,7 @@
 效果：
 
 
+先旋转，后位移
+
+
 ![](https://github.com/Kevincyc99/Images-Store/raw/main/LearnOpenGL/Results/19_Exercise4_2.gif)
