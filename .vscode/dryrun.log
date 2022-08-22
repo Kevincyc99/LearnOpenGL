@@ -1,7 +1,7 @@
-make.exe --dry-run --always-make --keep-going --print-directory
+make.exe --dry-run --keep-going --print-directory
 make.exe: Entering directory 'g:/C++/Code/MyCode/OpenGL/LearnOpenGL'
-mkdir output
-g++ -std=c++17 -Wall -Wextra -g -Iinclude -o output\main.exe   -Llib -lglad -lglfw3dll
+g++ -std=c++17 -Wall -Wextra -g -Iinclude -o output\main.exe include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o include/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o  -Llib -lglad -lglfw3dll
 echo Executing 'all' complete!
+ 
 make.exe: Leaving directory 'g:/C++/Code/MyCode/OpenGL/LearnOpenGL'
  

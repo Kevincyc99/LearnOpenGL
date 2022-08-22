@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Mon Aug 22 13:06:36 2022
+# Make data base, printed on Mon Aug 22 18:06:21 2022
 
 # Variables
 
@@ -56,8 +56,8 @@ MAKEFILE_LIST :=  Makefile
 FPS_BROWSER_USER_PROFILE_STRING = Default
 # environment
 TMP = C:\Users\raini\AppData\Local\Temp
-# makefile (from 'Makefile', line 56)
-SOURCES := 
+# makefile (from 'Makefile', line 58)
+SOURCES :=  include/imgui/imgui_impl_glfw.cpp include/imgui/imgui_impl_opengl3.cpp include/imgui/imgui.cpp include/imgui/imgui_demo.cpp include/imgui/imgui_draw.cpp include/imgui/imgui_widgets.cpp include/imgui/imgui_tables.cpp
 # makefile (from 'Makefile', line 10)
 CXXFLAGS := -std=c++17 -Wall -Wextra -g
 # environment
@@ -100,7 +100,7 @@ CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1140_MHGVPNXMIKNBMVXZ
 COMPUTERNAME = DESKTOP-0F2PMD1
 # environment
 PROGRAMFILES = C:\Program Files (x86)
-# makefile (from 'Makefile', line 67)
+# makefile (from 'Makefile', line 69)
 OUTPUTMAIN := output\main.exe
 # environment
 DRIVERDATA = C:\Windows\System32\Drivers\DriverData
@@ -117,7 +117,7 @@ JETBRAINS RIDER = G:\JetBrains\Rider\JetBrains Rider 2022.2\bin;
 # environment
 VSCODE_CODE_CACHE_PATH = C:\Users\raini\AppData\Roaming\Code\CachedData\da76f93349a72022ca4670c1b84860304616aaa2
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
@@ -218,8 +218,8 @@ SESSIONNAME = Console
 PROCESSOR_REVISION = 0802
 # default
 .RECIPEPREFIX := 
-# makefile (from 'Makefile', line 59)
-OBJECTS := 
+# makefile (from 'Makefile', line 61)
+OBJECTS := include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o include/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
 # environment
 VULKAN_SDK = G:\Code\Vulkan\VulkanSDK
 # environment
@@ -229,12 +229,11 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
- 
 VSCODE_PID = 1140
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # variable set hash-table stats:
-# Load=110/1024=11%, Rehash=0, Collisions=14/158=9%
+# Load=110/1024=11%, Rehash=0, Collisions=14/162=9%
 
 # Pattern-specific Variable Values
 
@@ -255,7 +254,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # F:\APP\Calibre\ (key F:/APP/Calibre/, mtime 1654658085): 24 files, no impossibilities.
 # G:\Code\Git\Git\cmd (key G:/Code/Git/Git/cmd, mtime 1659001160): 8 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1660324745): 106 files, no impossibilities.
-# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1661108165): 22 files, no impossibilities.
+# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1661156687): 27 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1658254026): 154 files, no impossibilities.
 # G:\Code\MinGW\bin (key G:/Code/MinGW/bin, mtime 1660305897): 57 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1651286009): 13 files, no impossibilities.
@@ -264,7 +263,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # F:\APP\Bandizip\ (key F:/APP/Bandizip/, mtime 1658056348): 21 files, no impossibilities.
 # G:\Code\Vulkan\VulkanSDK\Bin (key G:/Code/Vulkan/VulkanSDK/Bin, mtime 1659001949): 48 files, no impossibilities.
 
-# 4348 files, no impossibilities in 21 directories.
+# 4353 files, no impossibilities in 21 directories.
 
 # Implicit Rules
 
@@ -280,7 +279,7 @@ all: output main.exe
 #  Needs to be updated (-q is set).
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/11=0%
-#  recipe to execute (from 'Makefile', line 70):
+#  recipe to execute (from 'Makefile', line 72):
 	@echo Executing 'all' complete!
 
 .PHONY: clean
@@ -288,7 +287,28 @@ all: output main.exe
 #  Modification time never checked.
 #  File has not been updated.
 
-main.exe:
+# Not a target:
+include/imgui/imgui_widgets.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 18:00:26
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+include/imgui/imgui_draw.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 18:00:24
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+include/imgui/imgui_tables.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 18:05:14
+#  File has been updated.
+#  Successfully updated.
+
+main.exe: include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o include/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
 #  File does not exist.
@@ -301,18 +321,18 @@ main.exe:
 # automatic
 # * := 
 # automatic
-# + := 
+# + := include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o include/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
 # automatic
 # | := 
 # automatic
-# < := 
+# < := include/imgui/imgui_impl_glfw.o
 # automatic
-# ^ := 
+# ^ := include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o include/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
 # automatic
-# ? := 
+# ? := include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o include/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=2/19=11%
-#  recipe to execute (from 'Makefile', line 76):
+#  recipe to execute (from 'Makefile', line 78):
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -o $(OUTPUTMAIN) $(OBJECTS) $(LFLAGS) $(LIBS) $(Libraries)
 
 # Not a target:
@@ -324,7 +344,14 @@ main.exe:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-08-13 17:05:11
+#  Last modified 2022-08-22 18:05:02
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+include/imgui/imgui_demo.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 18:00:22
 #  File has been updated.
 #  Successfully updated.
 
@@ -335,11 +362,10 @@ Makefile:
 #  File has not been updated.
 
 run: all
-#  Implici 
-t rule search has not been done.
+#  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 92):
+#  recipe to execute (from 'Makefile', line 94):
 	./$(OUTPUTMAIN)
 	@echo Executing 'run: all' complete!
 
@@ -347,7 +373,7 @@ t rule search has not been done.
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 83):
+#  recipe to execute (from 'Makefile', line 85):
 	$(CXX) $(CXXFLAGS) $(INCLUDES) -c $<  -o $@
 
 clean:
@@ -355,35 +381,56 @@ clean:
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 87):
+#  recipe to execute (from 'Makefile', line 89):
 	$(RM) $(OUTPUTMAIN)
 	$(RM) $(call FIXPATH,$(CLEAN_SRC))
 	@echo Cleanup complete!
 
-output:
-#  Implicit rule search has not been done.
-#  Last modified 2022-08-22 02:12:40
+# Not a target:
+include/imgui/imgui_impl_opengl3.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 18:00:18
 #  File has been updated.
 #  Successfully updated.
-#  recipe to execute (from 'Makefile', line 73):
+
+output:
+#  Implicit rule search has not been done.
+#  Last modified 2022-08-22 18:05:14
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 75):
 	$(MD) $(OUTPUT)
 
+# Not a target:
+include/imgui/imgui_impl_glfw.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 18:00:17
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+include/imgui/imgui.o:
+#  Implicit rule search has been done.
+#  Last modified 2022-08-22 18:00:21
+#  File has been updated.
+#  Successfully updated.
+
 # files hash-table stats:
-# Load=10/1024=1%, Rehash=0, Collisions=0/29=0%
+# Load=17/1024=2%, Rehash=0, Collisions=0/43=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (8) / strings = 4225 / storage = 72763 B / avg = 17 B
-# current buf: size = 8174 B / used = 7445 B / count = 525 / avg = 14 B
-# other used: total = 64589 B / count = 3700 / avg = 17 B
+# strcache buffers: 9 (8) / strings = 4237 / storage = 73027 B / avg = 17 B
+# current buf: size = 8174 B / used = 7709 B / count = 537 / avg = 14 B
+# other used: total = 64853 B / count = 3700 / avg = 17 B
 # other free: total = 74 B / max = 17 B / min = 1 B / avg = 9 B
 
-# strcache performance: lookups = 4393 / hit rate = 3%
+# strcache performance: lookups = 4405 / hit rate = 3%
 # hash-table stats:
-# Load=4225/8192=52%, Rehash=0, Collisions=1897/4393=43%
-# Finished Make data base on Mon Aug 22 13:06:36 2022
+# Load=4237/8192=52%, Rehash=0, Collisions=1923/4405=44%
+# Finished Make data base on Mon Aug 22 18:06:21 2022
 
  
