@@ -42,7 +42,7 @@ int main()
 
     Shader ourShader("./src/16_Exercise10/Shader/vertex.glsl", "./src/16_Exercise10/Shader/fragment.glsl");
 
-    //定义顶点数组_位置-颜色
+    //定义顶点数组_位置-颜色-纹理坐标
     float vertices[] = {
         //位置              //颜色              //纹理坐标
        -0.5f,  0.5f, 0.0f,  1.0f, 1.0f, 0.0f,   0.0f, 1.0f,     //左上
