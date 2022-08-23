@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Tue Aug 23 22:08:37 2022
+# Make data base, printed on Wed Aug 24 01:13:41 2022
 
 # Variables
 
@@ -53,8 +53,6 @@ PATHEXT = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # environment
-FPS_BROWSER_USER_PROFILE_STRING = Default
-# environment
 TMP = C:\Users\raini\AppData\Local\Temp
 # makefile (from 'Makefile', line 58)
 SOURCES :=  include/imgui/imgui_impl_glfw.cpp include/imgui/imgui_impl_opengl3.cpp include/imgui/imgui.cpp include/imgui/imgui_demo.cpp include/imgui/imgui_draw.cpp include/imgui/imgui_widgets.cpp include/imgui/imgui_tables.cpp
@@ -95,7 +93,7 @@ VK_SDK_PATH = G:\Code\Vulkan\VulkanSDK
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14836_JJYKIPIUVMIXPZKC
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7800_BZAJUUJRFEWMRPXV
 # environment
 COMPUTERNAME = DESKTOP-0F2PMD1
 # environment
@@ -227,24 +225,22 @@ LANG = C
 # environment
 PROCESSOR_LEVEL = 23
 # environment
-FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
-# environment
-VSCODE_PID = 14836
+VSCODE_PID = 7800
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # variable set hash-table stats:
-# Load=110/1024=11%, Rehash=0, Collisions=14/162=9%
+# Load=108/1024=11%, Rehash=0, Collisions=14/160=9%
 
 # Pattern-specific Variable Values
 
-# No pattern-specific variable values.
+# No pattern-speci 
+fic variable values.
 
 # Directories
 
 # G:\Code\CMake\bin (key G:/Code/CMake/bin, mtime 1659001481): 7 files, no impossibilities.
 # C:\Program Files\PlasticSCM5\client (key C:/Program Files/PlasticSCM5/client, mtime 1649319606): 248 files, no impossibilities.
-# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633527262): 31 files, no im 
-possibilities.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633527262): 31 files, no impossibilities.
 # . (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL, mtime 1661162890): 14 files, no impossibilities.
 # C:\Users\raini\AppData\Local\Microsoft\WindowsApps (key C:/Users/raini/AppData/Local/Microsoft/WindowsApps, mtime 1660058633): 11 files, no impossibilities.
 # G:\Code\VSCODE\Microsoft VS Code\bin (key G:/Code/VSCODE/Microsoft VS Code/bin, mtime 1661263685): 4 files, no impossibilities.
@@ -255,7 +251,7 @@ possibilities.
 # F:\APP\Calibre\ (key F:/APP/Calibre/, mtime 1654658085): 24 files, no impossibilities.
 # G:\Code\Git\Git\cmd (key G:/Code/Git/Git/cmd, mtime 1659001160): 8 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1660324745): 106 files, no impossibilities.
-# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1661261703): 30 files, no impossibilities.
+# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1661274771): 32 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1658254026): 154 files, no impossibilities.
 # G:\Code\MinGW\bin (key G:/Code/MinGW/bin, mtime 1660305897): 57 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1651286009): 13 files, no impossibilities.
@@ -264,7 +260,7 @@ possibilities.
 # F:\APP\Bandizip\ (key F:/APP/Bandizip/, mtime 1658056348): 21 files, no impossibilities.
 # G:\Code\Vulkan\VulkanSDK\Bin (key G:/Code/Vulkan/VulkanSDK/Bin, mtime 1659001949): 48 files, no impossibilities.
 
-# 4357 files, no impossibilities in 21 directories.
+# 4359 files, no impossibilities in 21 directories.
 
 # Implicit Rules
 
@@ -330,8 +326,7 @@ main.exe: include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o inc
 # automatic
 # ^ := include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o include/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
 # automatic
-# ? := include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o i 
-nclude/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
+# ? := include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o include/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=2/19=11%
 #  recipe to execute (from 'Makefile', line 78):
@@ -372,7 +367,8 @@ run: all
 	@echo Executing 'run: all' complete!
 
 .cpp.o:
-#  Implicit rule search has not been done.
+#  Implicit 
+ rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 85):
@@ -397,7 +393,7 @@ include/imgui/imgui_impl_opengl3.o:
 
 output:
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-23 22:07:09
+#  Last modified 2022-08-23 22:32:58
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 75):
@@ -425,14 +421,14 @@ include/imgui/imgui.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (8) / strings = 4241 / storage = 73072 B / avg = 17 B
-# current buf: size = 8174 B / used = 7762 B / count = 541 / avg = 14 B
-# other used: total = 64898 B / count = 3700 / avg = 17 B
+# strcache buffers: 9 (8) / strings = 4243 / storage = 73102 B / avg = 17 B
+# current buf: size = 8174 B / used = 7792 B / count = 543 / avg = 14 B
+# other used: total = 64928 B / count = 3700 / avg = 17 B
 # other free: total = 82 B / max = 20 B / min = 1 B / avg = 10 B
 
-# strcache performance: lookups = 4409 / hit rate = 3%
+# strcache performance: lookups = 4411 / hit rate = 3%
 # hash-table stats:
-# Load=4241/8192=52%, Rehash=0, Collisions=1923/4409=44%
-# Finished Make data base on Tue Aug 23 22:08:37 2022
+# Load=4243/8192=52%, Rehash=0, Collisions=1925/4411=44%
+# Finished Make data base on Wed Aug 24 01:13:41 2022
 
  
