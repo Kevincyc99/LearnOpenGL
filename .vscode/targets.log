@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Mon Aug 22 18:06:21 2022
+# Make data base, printed on Tue Aug 23 22:08:37 2022
 
 # Variables
 
@@ -95,7 +95,7 @@ VK_SDK_PATH = G:\Code\Vulkan\VulkanSDK
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_1140_MHGVPNXMIKNBMVXZ
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_14836_JJYKIPIUVMIXPZKC
 # environment
 COMPUTERNAME = DESKTOP-0F2PMD1
 # environment
@@ -115,9 +115,9 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 JETBRAINS RIDER = G:\JetBrains\Rider\JetBrains Rider 2022.2\bin;
 # environment
-VSCODE_CODE_CACHE_PATH = C:\Users\raini\AppData\Roaming\Code\CachedData\da76f93349a72022ca4670c1b84860304616aaa2
+VSCODE_CODE_CACHE_PATH = C:\Users\raini\AppData\Roaming\Code\CachedData\e4503b30fc78200f846c62cf8091b76ff5547662
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # environment
 COMMONPROGRAMFILES = C:\Program Files (x86)\Common Files
 # environment
@@ -169,7 +169,7 @@ PROCESSOR_IDENTIFIER = AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
 # environment
 OS = Windows_NT
 # environment
-VSCODE_IPC_HOOK = \\.\pipe\e48ad3739aae92155c1fcbb22f83b8eb-1.70.0-main-sock
+VSCODE_IPC_HOOK = \\.\pipe\e48ad3739aae92155c1fcbb22f83b8eb-1.70.2-main-sock
 # environment
 HOMEPATH = \Users\raini
 # environment
@@ -229,7 +229,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 1140
+VSCODE_PID = 14836
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # variable set hash-table stats:
@@ -243,10 +243,11 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 
 # G:\Code\CMake\bin (key G:/Code/CMake/bin, mtime 1659001481): 7 files, no impossibilities.
 # C:\Program Files\PlasticSCM5\client (key C:/Program Files/PlasticSCM5/client, mtime 1649319606): 248 files, no impossibilities.
-# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633527262): 31 files, no impossibilities.
-# . (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL, mtime 1660727254): 13 files, no impossibilities.
+# C:\Windows\System32\WindowsPowerShell\v1.0\ (key C:/Windows/System32/WindowsPowerShell/v1.0/, mtime 1633527262): 31 files, no im 
+possibilities.
+# . (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL, mtime 1661162890): 14 files, no impossibilities.
 # C:\Users\raini\AppData\Local\Microsoft\WindowsApps (key C:/Users/raini/AppData/Local/Microsoft/WindowsApps, mtime 1660058633): 11 files, no impossibilities.
-# G:\Code\VSCODE\Microsoft VS Code\bin (key G:/Code/VSCODE/Microsoft VS Code/bin, mtime 1660049913): 4 files, no impossibilities.
+# G:\Code\VSCODE\Microsoft VS Code\bin (key G:/Code/VSCODE/Microsoft VS Code/bin, mtime 1661263685): 4 files, no impossibilities.
 # C:\Users\raini\AppData\Local\GitHubDesktop\bin (key C:/Users/raini/AppData/Local/GitHubDesktop/bin, mtime 1653965068): 4 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # G:\JetBrains\Rider\JetBrains Rider 2022.2\bin (key G:/JetBrains/Rider/JetBrains Rider 2022.2/bin, mtime 1659846500): 35 files, no impossibilities.
@@ -254,7 +255,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # F:\APP\Calibre\ (key F:/APP/Calibre/, mtime 1654658085): 24 files, no impossibilities.
 # G:\Code\Git\Git\cmd (key G:/Code/Git/Git/cmd, mtime 1659001160): 8 files, no impossibilities.
 # C:\Windows (key C:/Windows, mtime 1660324745): 106 files, no impossibilities.
-# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1661156687): 27 files, no impossibilities.
+# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1661261703): 30 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1658254026): 154 files, no impossibilities.
 # G:\Code\MinGW\bin (key G:/Code/MinGW/bin, mtime 1660305897): 57 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1651286009): 13 files, no impossibilities.
@@ -263,7 +264,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # F:\APP\Bandizip\ (key F:/APP/Bandizip/, mtime 1658056348): 21 files, no impossibilities.
 # G:\Code\Vulkan\VulkanSDK\Bin (key G:/Code/Vulkan/VulkanSDK/Bin, mtime 1659001949): 48 files, no impossibilities.
 
-# 4353 files, no impossibilities in 21 directories.
+# 4357 files, no impossibilities in 21 directories.
 
 # Implicit Rules
 
@@ -329,7 +330,8 @@ main.exe: include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o inc
 # automatic
 # ^ := include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o include/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
 # automatic
-# ? := include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o include/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
+# ? := include/imgui/imgui_impl_glfw.o include/imgui/imgui_impl_opengl3.o include/imgui/imgui.o include/imgui/imgui_demo.o i 
+nclude/imgui/imgui_draw.o include/imgui/imgui_widgets.o include/imgui/imgui_tables.o
 # variable set hash-table stats:
 # Load=8/32=25%, Rehash=0, Collisions=2/19=11%
 #  recipe to execute (from 'Makefile', line 78):
@@ -395,7 +397,7 @@ include/imgui/imgui_impl_opengl3.o:
 
 output:
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-22 18:05:14
+#  Last modified 2022-08-23 22:07:09
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 75):
@@ -423,14 +425,14 @@ include/imgui/imgui.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (8) / strings = 4237 / storage = 73027 B / avg = 17 B
-# current buf: size = 8174 B / used = 7709 B / count = 537 / avg = 14 B
-# other used: total = 64853 B / count = 3700 / avg = 17 B
-# other free: total = 74 B / max = 17 B / min = 1 B / avg = 9 B
+# strcache buffers: 9 (8) / strings = 4241 / storage = 73072 B / avg = 17 B
+# current buf: size = 8174 B / used = 7762 B / count = 541 / avg = 14 B
+# other used: total = 64898 B / count = 3700 / avg = 17 B
+# other free: total = 82 B / max = 20 B / min = 1 B / avg = 10 B
 
-# strcache performance: lookups = 4405 / hit rate = 3%
+# strcache performance: lookups = 4409 / hit rate = 3%
 # hash-table stats:
-# Load=4237/8192=52%, Rehash=0, Collisions=1923/4405=44%
-# Finished Make data base on Mon Aug 22 18:06:21 2022
+# Load=4241/8192=52%, Rehash=0, Collisions=1923/4409=44%
+# Finished Make data base on Tue Aug 23 22:08:37 2022
 
  
