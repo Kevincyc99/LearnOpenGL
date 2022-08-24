@@ -201,11 +201,12 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
         //----------------------------------------------------------------
-        //渲染立方体
         //激活着色器
         lightingShader.use();
+        //立方体颜色
         lightingShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
-        lightingShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
+        //光源颜色
+        lightingShader.setVec3("lightColor", 0.0f, 1.0f, 1.0f);
         //观察、投影变换
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         glm::mat4 view = camera.GetViewMatrix();
@@ -219,7 +220,6 @@ int main()
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
         //----------------------------------------------------------------
-        //渲染光源
         //激活着色器
         lightCubeShader.use();
         lightingShader.setMat4("projection", projection);
