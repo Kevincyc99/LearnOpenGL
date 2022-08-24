@@ -200,6 +200,8 @@ int main()
 		glClearColor(clear_color.x, clear_color.y, clear_color.z, clear_color.w);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
+        //----------------------------------------------------------------
+        //渲染立方体
         //激活着色器
         lightingShader.use();
         lightingShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
@@ -212,11 +214,12 @@ int main()
         //世界变换
         glm::mat4 model = glm::mat4(1.0f);
         lightingShader.setMat4("model", model);
-
         //渲染立方体
         glBindVertexArray(cubeVAO);
         glDrawArrays(GL_TRIANGLES, 0, 36);
 
+        //----------------------------------------------------------------
+        //渲染光源
         //激活着色器
         lightCubeShader.use();
         lightingShader.setMat4("projection", projection);
