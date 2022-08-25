@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Wed Aug 24 16:25:45 2022
+# Make data base, printed on Thu Aug 25 11:22:10 2022
 
 # Variables
 
@@ -95,7 +95,7 @@ VK_SDK_PATH = G:\Code\Vulkan\VulkanSDK
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_5612_JTIPAESXFSSODUCT
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7504_ZSURJZOJHGFRPINE
 # environment
 COMPUTERNAME = DESKTOP-0F2PMD1
 # environment
@@ -229,7 +229,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 5612
+VSCODE_PID = 7504
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # variable set hash-table stats:
@@ -253,8 +253,9 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # C:\Users\raini\.dotnet\tools: could not be stat'd.
 # F:\APP\Calibre\ (key F:/APP/Calibre/, mtime 1654658085): 24 files, no impossibilities.
 # G:\Code\Git\Git\cmd (key G:/Code/Git/Git/cmd, mtime 1659001160): 8 files, no impossibilities.
-# C:\Windows (key C:/Windows, mtime 1660324745): 106 files, no impossibilities.
-# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1661328595): 34 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 
+ 1660324745): 106 files, no impossibilities.
+# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1661352424): 36 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1658254026): 154 files, no impossibilities.
 # G:\Code\MinGW\bin (key G:/Code/MinGW/bin, mtime 1660305897): 57 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1651286009): 13 files, no impossibilities.
@@ -263,7 +264,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # F:\APP\Bandizip\ (key F:/APP/Bandizip/, mtime 1658056348): 21 files, no impossibilities.
 # G:\Code\Vulkan\VulkanSDK\Bin (key G:/Code/Vulkan/VulkanSDK/Bin, mtime 1659001949): 48 files, no impossibilities.
 
-# 4361 files, no impossibilities in 21 directories.
+# 4363 files, no impossibilities in 21 directories.
 
 # Implicit Rules
 
@@ -272,8 +273,7 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # Files
 
 all: output main.exe
-#  Comm 
-and line target.
+#  Command line target.
 #  Implicit rule search has not been done.
 #  File does not exist.
 #  File has been updated.
@@ -396,7 +396,7 @@ include/imgui/imgui_impl_opengl3.o:
 
 output:
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-24 16:24:03
+#  Last modified 2022-08-24 22:24:41
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 75):
@@ -424,14 +424,14 @@ include/imgui/imgui.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (8) / strings = 4245 / storage = 73125 B / avg = 17 B
-# current buf: size = 8174 B / used = 7815 B / count = 545 / avg = 14 B
-# other used: total = 64951 B / count = 3700 / avg = 17 B
+# strcache buffers: 9 (8) / strings = 4247 / storage = 73153 B / avg = 17 B
+# current buf: size = 8174 B / used = 7843 B / count = 547 / avg = 14 B
+# other used: total = 64979 B / count = 3700 / avg = 17 B
 # other free: total = 82 B / max = 20 B / min = 1 B / avg = 10 B
 
-# strcache performance: lookups = 4413 / hit rate = 3%
+# strcache performance: lookups = 4415 / hit rate = 3%
 # hash-table stats:
-# Load=4245/8192=52%, Rehash=0, Collisions=1926/4413=44%
-# Finished Make data base on Wed Aug 24 16:25:45 2022
+# Load=4247/8192=52%, Rehash=0, Collisions=1926/4415=44%
+# Finished Make data base on Thu Aug 25 11:22:10 2022
 
  
