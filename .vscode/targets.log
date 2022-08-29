@@ -7,7 +7,7 @@ make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --quest
 # There is NO WARRANTY, to the extent permitted by law.
  
 
-# Make data base, printed on Thu Aug 25 11:22:10 2022
+# Make data base, printed on Sun Aug 28 12:15:29 2022
 
 # Variables
 
@@ -95,7 +95,7 @@ VK_SDK_PATH = G:\Code\Vulkan\VulkanSDK
 # automatic
 %F = $(notdir $%)
 # environment
-CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_7504_ZSURJZOJHGFRPINE
+CHROME_CRASHPAD_PIPE_NAME = \\.\pipe\crashpad_6892_PYQLGCDLRUGYIQRI
 # environment
 COMPUTERNAME = DESKTOP-0F2PMD1
 # environment
@@ -229,7 +229,7 @@ PROCESSOR_LEVEL = 23
 # environment
 FPS_BROWSER_APP_PROFILE_STRING = Internet Explorer
 # environment
-VSCODE_PID = 7504
+VSCODE_PID = 6892
 # environment
 USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # variable set hash-table stats:
@@ -247,15 +247,15 @@ USERDOMAIN_ROAMINGPROFILE = DESKTOP-0F2PMD1
 # . (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL, mtime 1661162890): 14 files, no impossibilities.
 # C:\Users\raini\AppData\Local\Microsoft\WindowsApps (key C:/Users/raini/AppData/Local/Microsoft/WindowsApps, mtime 1660058633): 11 files, no impossibilities.
 # G:\Code\VSCODE\Microsoft VS Code\bin (key G:/Code/VSCODE/Microsoft VS Code/bin, mtime 1661263685): 4 files, no impossibilities.
-# C:\Users\raini\AppData\Local\GitHubDesktop\bin (key C:/Users/raini/AppData/Local/GitHubDesktop/bin, mtime 1653965068): 4 files, no impossibilities.
+# C:\Users\raini\AppData\Local\GitHubDesktop\bin (key C:/Users/raini/AppData/Local/GitHubDesktop/bin, mtime 16539 
+65068): 4 files, no impossibilities.
 # C:\Windows\System32\OpenSSH\: could not be stat'd.
 # G:\JetBrains\Rider\JetBrains Rider 2022.2\bin (key G:/JetBrains/Rider/JetBrains Rider 2022.2/bin, mtime 1659846500): 35 files, no impossibilities.
 # C:\Users\raini\.dotnet\tools: could not be stat'd.
 # F:\APP\Calibre\ (key F:/APP/Calibre/, mtime 1654658085): 24 files, no impossibilities.
 # G:\Code\Git\Git\cmd (key G:/Code/Git/Git/cmd, mtime 1659001160): 8 files, no impossibilities.
-# C:\Windows (key C:/Windows, mtime 
- 1660324745): 106 files, no impossibilities.
-# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1661352424): 36 files, no impossibilities.
+# C:\Windows (key C:/Windows, mtime 1660324745): 106 files, no impossibilities.
+# src/ (key g:/C++/Code/MyCode/OpenGL/LearnOpenGL/src/, mtime 1661400718): 36 files, no impossibilities.
 # C:\Windows\System32\Wbem (key C:/Windows/System32/Wbem, mtime 1658254026): 154 files, no impossibilities.
 # G:\Code\MinGW\bin (key G:/Code/MinGW/bin, mtime 1660305897): 57 files, no impossibilities.
 # C:\Program Files\dotnet\ (key C:/Program Files/dotnet/, mtime 1651286009): 13 files, no impossibilities.
@@ -396,7 +396,7 @@ include/imgui/imgui_impl_opengl3.o:
 
 output:
 #  Implicit rule search has not been done.
-#  Last modified 2022-08-24 22:24:41
+#  Last modified 2022-08-26 02:02:28
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 75):
@@ -424,14 +424,14 @@ include/imgui/imgui.o:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 9 (8) / strings = 4247 / storage = 73153 B / avg = 17 B
-# current buf: size = 8174 B / used = 7843 B / count = 547 / avg = 14 B
-# other used: total = 64979 B / count = 3700 / avg = 17 B
+# strcache buffers: 9 (8) / strings = 4247 / storage = 73147 B / avg = 17 B
+# current buf: size = 8174 B / used = 7837 B / count = 547 / avg = 14 B
+# other used: total = 64973 B / count = 3700 / avg = 17 B
 # other free: total = 82 B / max = 20 B / min = 1 B / avg = 10 B
 
 # strcache performance: lookups = 4415 / hit rate = 3%
 # hash-table stats:
-# Load=4247/8192=52%, Rehash=0, Collisions=1926/4415=44%
-# Finished Make data base on Thu Aug 25 11:22:10 2022
+# Load=4247/8192=52%, Rehash=0, Collisions=1929/4415=44%
+# Finished Make data base on Sun Aug 28 12:15:29 2022
 
  
