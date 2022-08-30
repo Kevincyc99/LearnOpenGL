@@ -92,8 +92,8 @@ int main()
     ImVec4 clear_color = ImVec4(0.1, 0.1, 0.1, 1.0);
     //----------------------------------------------------------------
     //加载着色器
-    Shader lightingShader("./src/37_Exercise19/Shader/lightVertex.glsl", "./src/37_Exercise19/Shader/lightFragment.glsl");
-    Shader lightCubeShader("./src/37_Exercise19/Shader/cubeVertex.glsl", "./src/37_Exercise19/Shader/cubeFragment.glsl");
+    Shader lightingShader("./src/38_Exercise20/Shader/lightVertex.glsl", "./src/38_Exercise20/Shader/lightFragment.glsl");
+    Shader lightCubeShader("./src/38_Exercise20/Shader/cubeVertex.glsl", "./src/38_Exercise20/Shader/cubeFragment.glsl");
     //开启深度测试
     glEnable(GL_DEPTH_TEST);
 
@@ -205,7 +205,7 @@ int main()
         ImGui::SliderFloat("Ambient Factor", &ambientStrength, 0.0f, 1.0f);
         ImGui::SliderFloat("Specular Factor", &specularStrength, 0.0, 1.0f);
         ImGui::SliderInt("Shininess", &Shininess, 1, 8);
-        ImGui::Checkbox("Specular Method", &SpecularMethod);
+        //ImGui::Checkbox("Specular Method", &SpecularMethod);
         ImGui::ColorEdit3("clear color", (float *)&clear_color);
         ImGui::End();
 
@@ -224,13 +224,13 @@ int main()
         lightingShader.setFloat("ambientStrength", ambientStrength);
         lightingShader.setFloat("specularStrength", specularStrength);
         lightingShader.setInt("Shininess", Shininess);
-        lightingShader.setBool("SpecularMethod", SpecularMethod);
+        //lightingShader.setBool("SpecularMethod", SpecularMethod);
         //光源位置
-        // lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
-        // lightPos.y = sin(glfwGetTime()) * 1.0f;
+        lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
+        lightPos.z = 1.0f + cos(glfwGetTime()) * 2.0f;
         lightingShader.setVec3("lightPos", lightPos);
         //观察者位置
-        lightingShader.setVec3("viewPos", camera.Position);
+        //lightingShader.setVec3("viewPos", camera.Position);
         //观察、投影变换
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         glm::mat4 view = camera.GetViewMatrix();

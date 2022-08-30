@@ -31,14 +31,13 @@ Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 bool firstMouse = true;
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
-bool mouseMove = true;
 
 //帧时间
 float deltaTime = 0.0f;	//当前帧与上一帧的时间差
 float lastFrame = 0.0f;	//上一帧的时间
 
 //光照
-glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+glm::vec3 lightPos(1.2f, 0.7f, 2.0f);
 
 int main()
 {
@@ -92,8 +91,8 @@ int main()
     ImVec4 clear_color = ImVec4(0.1, 0.1, 0.1, 1.0);
     //----------------------------------------------------------------
     //加载着色器
-    Shader lightingShader("./src/37_Exercise19/Shader/lightVertex.glsl", "./src/37_Exercise19/Shader/lightFragment.glsl");
-    Shader lightCubeShader("./src/37_Exercise19/Shader/cubeVertex.glsl", "./src/37_Exercise19/Shader/cubeFragment.glsl");
+    Shader lightingShader("./src/39_Exercise21/Shader/lightVertex.glsl", "./src/39_Exercise21/Shader/lightFragment.glsl");
+    Shader lightCubeShader("./src/39_Exercise21/Shader/cubeVertex.glsl", "./src/39_Exercise21/Shader/cubeFragment.glsl");
     //开启深度测试
     glEnable(GL_DEPTH_TEST);
 
@@ -179,10 +178,6 @@ int main()
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void*)0);
     glEnableVertexAttribArray(0);
 
-    float ambientStrength = 0.1f;   //环境因子
-    float specularStrength = 0.5f;  //镜面强度
-    int Shininess = 5;
-    bool SpecularMethod = true;
     //----------------------------------------------------------------
     //渲染循环
 	while(!glfwWindowShouldClose(window))
@@ -202,10 +197,7 @@ int main()
 
         ImGui::Begin("Imgui");
         ImGui::Text("%.3f ms/frame (%.1f FPS)", 1000.0f / ImGui::GetIO().Framerate, ImGui::GetIO().Framerate);
-        ImGui::SliderFloat("Ambient Factor", &ambientStrength, 0.0f, 1.0f);
-        ImGui::SliderFloat("Specular Factor", &specularStrength, 0.0, 1.0f);
-        ImGui::SliderInt("Shininess", &Shininess, 1, 8);
-        ImGui::Checkbox("Specular Method", &SpecularMethod);
+        
         ImGui::ColorEdit3("clear color", (float *)&clear_color);
         ImGui::End();
 
@@ -220,15 +212,10 @@ int main()
         lightingShader.setVec3("objectColor", 1.0f, 0.5f, 0.31f);
         //光源颜色
         lightingShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
-        //光照模型
-        lightingShader.setFloat("ambientStrength", ambientStrength);
-        lightingShader.setFloat("specularStrength", specularStrength);
-        lightingShader.setInt("Shininess", Shininess);
-        lightingShader.setBool("SpecularMethod", SpecularMethod);
         //光源位置
-        // lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
-        // lightPos.y = sin(glfwGetTime()) * 1.0f;
         lightingShader.setVec3("lightPos", lightPos);
+        lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
+        lightPos.z = cos(glfwGetTime()) * 2.0f;
         //观察者位置
         lightingShader.setVec3("viewPos", camera.Position);
         //观察、投影变换
@@ -295,19 +282,6 @@ void processInput(GLFWwindow* window)
         camera.ProcessKeyboard(LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
         camera.ProcessKeyboard(RIGHT, deltaTime);
-    if (glfwGetKey(window, GLFW_KEY_LEFT_ALT) == GLFW_PRESS)
-    {
-        //通过alt来显示鼠标并暂停视角移动
-        firstMouse = true;
-        mouseMove = false;
-        glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
-
-    }
-    else
-    {
-        mouseMove = true;
-        glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-    }
 }
 
 void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
@@ -316,7 +290,7 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
     float ypos = static_cast<float>(yposIn);
 
     //通过判断是否是第一次鼠标输入，若是则进行初始化，避免突变
-    if (firstMouse && mouseMove)
+    if (firstMouse)
     {
         lastX = xpos;
         lastY = ypos;
@@ -324,15 +298,12 @@ void mouse_callback(GLFWwindow* window, double xposIn, double yposIn)
     }
     //1
     //在鼠标回调函数中计算偏移量
-    if (mouseMove)
-    {
-        float xoffset = xpos - lastX;
-        float yoffset = lastY - ypos;	//这里相反是因为y轴从下到上是递增的，而mouse_callback中(x,y)是相对于窗口左上角的位置
-        lastX = xpos;
-        lastY = ypos;
+    float xoffset = xpos - lastX;
+    float yoffset = lastY - ypos;	//这里相反是因为y轴从下到上是递增的，而mouse_callback中(x,y)是相对于窗口左上角的位置
+    lastX = xpos;
+    lastY = ypos;
 
-        camera.ProcessMouseMovement(xoffset, yoffset);
-    }
+    camera.ProcessMouseMovement(xoffset, yoffset);
 }
 
 void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)

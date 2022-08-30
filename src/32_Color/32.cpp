@@ -222,8 +222,8 @@ int main()
         //----------------------------------------------------------------
         //激活着色器
         lightCubeShader.use();
-        lightingShader.setMat4("projection", projection);
-        lightingShader.setMat4("view", view);
+        lightCubeShader.setMat4("projection", projection);
+        lightCubeShader.setMat4("view", view);
         model = glm::mat4(1.0f);
         model = glm::translate(model, lightPos);
         model = glm::scale(model, glm::vec3(0.2f));
