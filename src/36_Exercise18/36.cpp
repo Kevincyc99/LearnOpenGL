@@ -37,7 +37,7 @@ float deltaTime = 0.0f;	//当前帧与上一帧的时间差
 float lastFrame = 0.0f;	//上一帧的时间
 
 //光照
-glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+glm::vec3 lightPos(1.2f, 0.7f, 2.0f);
 
 int main()
 {
@@ -213,9 +213,9 @@ int main()
         //光源颜色
         lightingShader.setVec3("lightColor", 1.0f, 1.0f, 1.0f);
         //光源位置
-        lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
-        lightPos.y = sin(glfwGetTime()) * 1.0f;
         lightingShader.setVec3("lightPos", lightPos);
+        lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
+        lightPos.z = cos(glfwGetTime()) * 2.0f;
         //观察者位置
         lightingShader.setVec3("viewPos", camera.Position);
         //观察、投影变换
