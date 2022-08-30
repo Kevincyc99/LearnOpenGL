@@ -11,3 +11,7 @@
 
 
 ![](https://github.com/Kevincyc99/Images-Store/raw/main/LearnOpenGL/Results/36_Exercise7_1.gif)
+
+
+
+由于Gouraud着色是在顶点着色器中计算光照，其计算的光照只在顶点处有效，其余片段均为顶点在三角形上的插值，而由于插值，导致最后的光照效果也往往以三角形来明显区分。
