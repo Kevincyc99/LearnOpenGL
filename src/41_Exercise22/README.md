@@ -7,16 +7,16 @@
 青色塑料
 
 
-![](https://github.com/Kevincyc99/Images-Store/raw/main/LearnOpenGL/Results/42_Cyan_Plastic.png)
+![](https://github.com/Kevincyc99/Images-Store/raw/main/LearnOpenGL/Results/41_Cyan_Plastic.png)
 
 
 黄金
 
 
-![](https://github.com/Kevincyc99/Images-Store/raw/main/LearnOpenGL/Results/42_gold.png)
+![](https://github.com/Kevincyc99/Images-Store/raw/main/LearnOpenGL/Results/41_gold.png)
 
 
 红宝石
 
 
-![](https://github.com/Kevincyc99/Images-Store/raw/main/LearnOpenGL/Results/42_ruby.png)
+![](https://github.com/Kevincyc99/Images-Store/raw/main/LearnOpenGL/Results/41_ruby.png)
